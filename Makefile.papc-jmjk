@@ -1,0 +1,3 @@
+NAGLIB=-lnag_nag
+NAGDIR=-L/usr/local/NAG/fll6a24dfl/lib/ -L/usr/local/NAG/fll6a24dfl/acml4.4.0/lib/
+NAGINC=-I/usr/local/NAG/fll6a24dfl/nag_interface_blocks/

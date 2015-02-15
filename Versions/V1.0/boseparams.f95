@@ -1,0 +1,22 @@
+module params
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!This module contains all of the physical and 
+!mathematical contants related to the problem.
+!These are then able to be used globally.
+!
+!   nmax, mmax - x, y extent of momentum-space
+!                matrix.        
+!
+!   varsize    - the number of complex variables
+!                in problem.
+!
+!   other variable pending understanding...
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   
+    implicit none
+
+    integer, public, parameter :: nmax=1, mmax=1
+    integer, public, parameter :: varsize=(2*nmax+1)*(2*mmax+1)+1
+    real(kind=kind(1.0D0)), public, parameter   :: UN=10, Omega_r=0.05, Kappa=8
+    real(kind=kind(1.0D0)), public, parameter   :: OmegaTil=1, Pump=0.707
+
+end module
